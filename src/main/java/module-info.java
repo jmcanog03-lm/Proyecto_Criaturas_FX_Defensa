@@ -12,7 +12,7 @@ module com.example {
     requires javafx.fxml;
     requires com.google.gson;
     requires java.base;
-
+    requires java.desktop;
     opens com.example to javafx.fxml;
     opens com.example.Modelo to com.google.gson;
     exports com.example;

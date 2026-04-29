@@ -63,5 +63,18 @@
     "turnoDesactivacion": 0,
     "nGolpes": 0,
     "ataqueLista": ["ParaAquellosQueVenganDespues","Sobrecarga","TripleGolpe"]
+  },
+  {
+    "vida": 31,
+    "nombre": "Personaje la Defensa",
+    "monocos": 30,
+    "danoMultiplicador": 1,
+    "segundosVisibles": 6,
+    "monocosPorParry": 4,
+    "turnos": 0,
+    "ftwca": false,
+    "turnoDesactivacion": 0,
+    "nGolpes": 0,
+    "ataqueLista": ["Rayo","NuevaHabilidad","TripleGolpe"]
   }
 ]

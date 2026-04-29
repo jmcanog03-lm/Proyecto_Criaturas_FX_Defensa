@@ -1,11 +1,13 @@
 package com.example;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-
+import java.awt.Desktop;
 import com.example.Modelo.Jugador;
 import com.example.Modelo.ManagerJugador;
 import com.example.Modelo.ReaderJugador;
@@ -41,6 +43,9 @@ public class PrimaryController implements Initializable {
     private Button btnEmpezar;
 
     @FXML
+    private Button btnVentana;
+
+    @FXML
     private ComboBox<Jugador> cbojugador;
 
     /**
@@ -69,6 +74,18 @@ public class PrimaryController implements Initializable {
             try {
                 Empezar();
             } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+
+         btnVentana.setOnAction(event -> {
+            try {
+                Desktop.getDesktop().browse(new URI("https://github.com/andreherrera27200207-prog/Proyecto_Criaturas_FX"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });

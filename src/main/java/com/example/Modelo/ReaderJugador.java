@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.example.Modelo.Efectos.Gommage;
+import com.example.Modelo.Efectos.NuevaHabilidad;
 import com.example.Modelo.Efectos.ParaAquellosQueVenganDespues;
 import com.example.Modelo.Efectos.Potenciacion;
 import com.example.Modelo.Efectos.Rayo;
@@ -109,6 +110,10 @@ public class ReaderJugador implements InterfaceReaderJugador {
                     ataque.setCoste(3);
                     break;
 
+        case "NuevaHabilidad": ataque.setEfecto(new NuevaHabilidad());
+                               ataque.setNombre(tipo);
+                               ataque.setCoste(3);
+                               break;
         case "TripleGolpe": ataque.setEfecto(new TripleGolpe());
                     ataque.setNombre(tipo);
                     ataque.setCoste(2);

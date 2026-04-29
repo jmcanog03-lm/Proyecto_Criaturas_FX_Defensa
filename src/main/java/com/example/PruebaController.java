@@ -12,6 +12,7 @@ import com.example.Modelo.ManagerJugador;
 import com.example.Modelo.Partida;
 import com.example.Modelo.ReaderJugador;
 
+import java.awt.Desktop;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
